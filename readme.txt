@@ -1,8 +1,13 @@
 === Colorlib ===
 Contributors: Colorlib
+
+Version: 1.1
+
 Requires at least: WordPress 4.9
-Tested : WordPress 5.3.2
-Version: 1.0
+Tested : WordPress 5.8.1
+Requires PHP at least: 5.6
+Tested PHP : 8
+
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, left-sidebar, right-sidebar, flexible-header, custom-colors

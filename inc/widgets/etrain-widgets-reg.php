@@ -6,7 +6,7 @@ if( !defined( 'ABSPATH' ) ){
 
 /**
  * @Packge     : Etrain
- * @Version    : 1.0
+
  * @Author     : Colorlib
  * @Author URI : http://colorlib.com/wp/
  *
