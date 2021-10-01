@@ -298,7 +298,7 @@ function etrain_page_titlebar() {
 					echo esc_html__( 'Blog', 'etrain' );
 
 				} elseif ( is_404() ) {
-					echo esc_html__( '404 error', 'etrain' );
+					echo esc_html__( '404 ERROR', 'etrain' );
 
 				}
 				?>
