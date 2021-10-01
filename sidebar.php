@@ -5,7 +5,7 @@ if( !defined( 'ABSPATH' ) ){
 }
 /**
  * @Packge 	   : Colorlib
- * @Version    : 1.0
+
  * @Author 	   : Colorlib
  * @Author URI : http://colorlib.com/wp/
  *

@@ -1,7 +1,7 @@
 <?php
 /**
  * @Packge     : etrain
- * @Version    : 1.0
+
  * @Author     : Colorlib
  * @Author URI : http://colorlib.com/wp/
  *
