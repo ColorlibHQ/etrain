@@ -107,7 +107,7 @@ if ( ! function_exists( 'etrain_breadcrumbs' ) ) {
         } elseif ( is_search() ) {
             $html .= '<li class="breadcrumb-item active" aria-current="page">'.esc_html__('Search results for:','etrain') . get_search_query() . '</li>';
         } elseif ( is_404() ) {
-            $html .= '<li class="breadcrumb-item active" aria-current="page">' . esc_html__( 'Error 404', 'etrain' ) . '</li>';
+            $html .= '<li class="breadcrumb-item active" aria-current="page">' . esc_html__( 'ERROR 404', 'etrain' ) . '</li>';
         } elseif ( is_home() ) {
             $html .= '<li class="breadcrumb-item active" aria-current="page">' . get_the_title( get_option( 'page_for_posts' ) ) . '</li>';
         }
