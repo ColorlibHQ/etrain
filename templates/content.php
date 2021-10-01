@@ -33,7 +33,7 @@
             </a>
             <?php
             $post_exc_limit = !empty( etrain_opt( 'etrain_excerpt_length' ) ) ? etrain_opt( 'etrain_excerpt_length' ) : 28;
-            echo wpautop( wp_trim_words( get_the_content(), $post_exc_limit, '' ) );
+            echo wpautop( wp_trim_words( get_the_content(), $post_exc_limit, '...' ) );
 
             if( etrain_opt( 'etrain_blog_meta' ) == 1 ) {
 	            ?>
