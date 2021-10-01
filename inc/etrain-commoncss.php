@@ -19,7 +19,7 @@ function etrain_common_custom_css(){
 		$header_bg         		  = esc_url( get_header_image() );
 		$header_bg_img 			  = !empty( $header_bg ) ? 'background-image: url('.esc_url( $header_bg ).')' : '';
 
-		$themeColor     		  = etrain_opt( 'etrain_theme_color' ) != '#ff663b' ? etrain_opt('etrain_theme_color') : '';
+		$themeColor     		  = etrain_opt( 'etrain_theme_color' );
 		$boxShadowColor    		  = etrain_opt( 'etrain_theme_box_shadow_color' ) != 'rgba(255, 126, 95, 0.15)' ? '0px 12px 20px 0px ' . etrain_opt( 'etrain_theme_box_shadow_color' ) : '';
 
 		$buttonBorderColor     	  = etrain_opt( 'etrain_button_border_color' );
@@ -30,13 +30,13 @@ function etrain_common_custom_css(){
 
 		$headerBg          		  = etrain_opt( 'etrain_header_bg_color');
 		
-		$headerRightBtnColor      = etrain_opt( 'etrain_header_right_btn_color' ) != '#ff663b' ? etrain_opt( 'etrain_header_right_btn_color' ) : '';
-		$headerRightBtnHvrColor   = etrain_opt( 'etrain_header_right_btn_hover_color' ) != '#ff663b' ? etrain_opt( 'etrain_header_right_btn_hover_color' ) : '';
+		$headerRightBtnColor      = etrain_opt( 'etrain_header_right_btn_color' );
+		$headerRightBtnHvrColor   = etrain_opt( 'etrain_header_right_btn_hover_color' );
 
 		$footerwbgColor     	  = etrain_opt('etrain_footer_bg_color');
-		$footerwTextColor   	  = etrain_opt('etrain_footer_widget_text_color') != '#abb2ba' ? etrain_opt('etrain_footer_widget_text_color') : '';
+		$footerwTextColor   	  = etrain_opt('etrain_footer_widget_text_color');
 		$widgettitlecolor  		  = etrain_opt('etrain_footer_widget_title_color');
-		$footerwanchorcolor 	  = etrain_opt('etrain_footer_widget_anchor_color') != '#ff663b' ? etrain_opt('etrain_footer_widget_anchor_color') : '';
+		$footerwanchorcolor 	  = etrain_opt('etrain_footer_widget_anchor_color');
 		$footerwanchorhovcolor    = etrain_opt('etrain_footer_widget_anchor_hover_color');
 
 		$fofbg					  = etrain_opt('etrain_fof_bg_color');
