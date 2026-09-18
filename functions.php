@@ -116,9 +116,7 @@
 	// Customizer
 	require_once( ETRAIN_DIR_PATH_INC . 'customizer/customizer.php' );
 	// Class autoloader
-	require_once( ETRAIN_DIR_PATH_INC . 'class-epsilon-dashboard-autoloader.php' );
 	// Class etrain dashboard
-	require_once( ETRAIN_DIR_PATH_INC . 'class-epsilon-init-dashboard.php' );
 	// Load CMB2 meta
 	require_once( ETRAIN_DIR_PATH_INC . 'CMB2/cmb2-functions.php' );
 	// Common css
@@ -204,3 +202,11 @@ if ( ! function_exists( 'etrain_modern_supports' ) ) {
 	}
 	add_action( 'after_setup_theme', 'etrain_modern_supports', 20 );
 }
+
+/**
+ * The theme's Customizer controls.
+ *
+ * Replaces the Epsilon framework: same fields and stored values,
+ * built on core's Customizer API.
+ */
+require_once get_template_directory() . '/inc/customizer/colorlib-customizer/colorlib-customizer.php';
