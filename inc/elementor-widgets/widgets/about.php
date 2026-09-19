@@ -91,7 +91,7 @@ class Etrain_About extends Widget_Base {
                         'name'      => 'list_icon',
                         'label'     => __( 'Select Icon', 'etrain' ),
                         'type'      => Controls_Manager::ICON,
-                        'default'   => 'fa fa-pencil-square-o',
+                        'default'   => 'fa-regular fa-pen-to-square',
                         'options'   => etrain_themify_icon()
                     ],
                     [

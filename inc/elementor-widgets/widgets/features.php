@@ -101,7 +101,7 @@ class Etrain_Features extends Widget_Base {
                         'name'      => 'icon',
                         'label'     => __( 'Select Icon', 'etrain' ),
                         'type'      => Controls_Manager::ICON,
-                        'default'   => 'fa fa-mobile',
+                        'default'   => 'fa-solid fa-mobile',
                         'options'   => etrain_flaticon_list()
                     ],
                     [

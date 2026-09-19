@@ -151,23 +151,23 @@ get_header();
                                     <div class='rating-stars text-center'>
                                         <ul id='stars'>
                                         <li class='star' title='Poor' data-value='1'>
-                                            <i class='fa fa-star fa-fw'></i>
+                                            <i class='fa-solid fa-star fa-fw'></i>
                                         </li>
                                         <li class='star' title='Fair' data-value='2'>
-                                            <i class='fa fa-star fa-fw'></i>
+                                            <i class='fa-solid fa-star fa-fw'></i>
                                         </li>
                                         <li class='star' title='Good' data-value='3'>
-                                            <i class='fa fa-star fa-fw'></i>
+                                            <i class='fa-solid fa-star fa-fw'></i>
                                         </li>
                                         <li class='star' title='Excellent' data-value='4'>
-                                            <i class='fa fa-star fa-fw'></i>
+                                            <i class='fa-solid fa-star fa-fw'></i>
                                         </li>
                                         <li class='star' title='WOW!!!' data-value='5'>
-                                            <i class='fa fa-star fa-fw'></i>
+                                            <i class='fa-solid fa-star fa-fw'></i>
                                         </li>
                                         </ul>
                                     </div>
-                                    <div class='success-box text-right'>
+                                    <div class='success-box text-end'>
                                         <div class='text-message'><span><?php echo esc_html__( 'N/A', 'etrain' ); ?></span></div>
                                     </div>
                                 </div>
@@ -181,7 +181,7 @@ get_header();
                                 <input type="hidden" id="reviewajax" value="<?php echo esc_url( admin_url( 'admin-ajax.php' ) ) ?>" >
                                 <input type="hidden" name="userid" id="userid" value="<?php echo absint( $currentUserId ) ?>" >
                                 <input type="hidden" name="postid" id="postid" value="<?php echo absint( get_the_ID() ); ?>" >
-                                <div class="mt-10 text-right">
+                                <div class="mt-10 text-end">
                                     <button type="submit" name="subpost" class="btn_1"><?php echo esc_html__( 'Submit', 'etrain' ); ?></button>
                                 </div>
                             </form>
@@ -209,9 +209,9 @@ get_header();
                                                         for ($i = 1; $i <= 5; $i++) {
 
                                                             if ($starReview >= $i) {
-                                                                echo '<span class="fa fa-star checked"></span>';
+                                                                echo '<span class="fa-solid fa-star checked"></span>';
                                                             } else {
-                                                                echo '<span class="fa fa-star"></span>';
+                                                                echo '<span class="fa-solid fa-star"></span>';
                                                             }
                                                         }
                                                         echo '</div>';
