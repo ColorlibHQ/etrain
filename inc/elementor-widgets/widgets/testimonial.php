@@ -329,12 +329,11 @@ class Etrain_Testimonial extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            $(document).ready(function() {
-
-                var review = $('.textimonial_iner');
-                if (review.length) {
-                    review.owlCarousel({
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                UI.owl('.textimonial_iner', {
                     items: 1,
                     loop: true,
                     dots: true,
@@ -344,19 +343,23 @@ class Etrain_Testimonial extends Widget_Base {
                     nav: false,
                     responsive: {
                         0: {
-                        margin: 15,
+                            margin: 15,
                         },
                         600: {
-                        margin: 10,
+                            margin: 10,
                         },
                         1000: {
-                        margin: 10,
+                            margin: 10,
                         }
                     }
-                    });
-                }
-            });
-        })(jQuery);
+                });
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

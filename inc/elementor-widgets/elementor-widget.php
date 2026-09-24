@@ -294,15 +294,13 @@ if ( !class_exists( 'Etrain_El_Widgets' ) ) {
             // googleapis js
             wp_register_script( 'maps-googleapis', '//maps.googleapis.com/maps/api/js?key='.esc_attr( $apiKey ) );
 
-            // ajaxchimp js
-            wp_enqueue_script( 'jquery-ajaxchimp', ETRAIN_DIR_ELEMENTOR . 'assets/js/jquery.ajaxchimp.min.js', array('jquery'), '1.0', true );
 
 
             // etrain map custom js
-            wp_register_script( 'etrain-map-custom', ETRAIN_DIR_ELEMENTOR . 'assets/js/map-custom.js', array('jquery'), '1.0', true );
+            wp_register_script( 'etrain-map-custom', ETRAIN_DIR_ELEMENTOR . 'assets/js/map-custom.js', array(), '1.0-s2', true );
 
             // etrain companion main js
-            wp_enqueue_script( 'etrain', ETRAIN_DIR_ELEMENTOR . 'assets/js/etrain-companion-main.js', array( 'jquery', 'jquery-ui-datepicker' ), '1.0', true );
+            wp_enqueue_script( 'etrain', ETRAIN_DIR_ELEMENTOR . 'assets/js/etrain-companion-main.js', array( 'etrain-ui-js' ), '1.0-s2', true );
 
 
             wp_localize_script( 'etrain', 'ajax_object',

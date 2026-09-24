@@ -226,51 +226,23 @@
 					array(
 						'handler'		=> 'etrain-theme-bootstrap',
 						'file' 			=> $jsPath.'bootstrap.min.js',
-						'dependency' 	=> array( 'jquery' ),
+						'dependency' 	=> array(),
 						'version' 		=> '5.3.8-4',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'etrain-theme-magnific-popup-js',
-						'file' 			=> $jsPath.'jquery.magnific-popup.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'etrain-theme-swiper-min-js',
-						'file' 			=> $jsPath.'swiper.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'etrain-theme-owl-carousel-js',
-						'file' 			=> $jsPath.'owl.carousel.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'etrain-theme-slick-min-js',
-						'file' 			=> $jsPath.'slick.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
 						'in_footer' 	=> true
 					),
 					
 					array(
 						'handler'		=> 'etrain-ui-js',
-						'file' 			=> $jsPath.'colorlib-ui.js',
+						'file' 			=> $jsPath . ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'colorlib-ui.js' : 'colorlib-ui.min.js' ),
 						'dependency' 	=> array(),
-						'version' 		=> '2.1.1',
+						'version' 		=> '3.0.0',
 						'in_footer' 	=> true
 					),
 					array(
 						'handler'		=> 'etrain-theme-etrain-custom',
 						'file' 			=> $jsPath.'custom.js',
-						'dependency' 	=> array( 'jquery', 'etrain-ui-js' ),
-						'version' 		=> $this->etrain_version . '-s1',
+						'dependency' 	=> array( 'etrain-ui-js' ),
+						'version' 		=> $this->etrain_version . '-s2',
 						'in_footer' 	=> true
 					),
 
