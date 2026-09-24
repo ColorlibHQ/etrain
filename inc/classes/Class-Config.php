@@ -242,7 +242,7 @@
 						'handler'		=> 'etrain-theme-etrain-custom',
 						'file' 			=> $jsPath.'custom.js',
 						'dependency' 	=> array( 'etrain-ui-js' ),
-						'version' 		=> $this->etrain_version . '-s2',
+						'version' 		=> $this->etrain_version . '-s3',
 						'in_footer' 	=> true
 					),
 

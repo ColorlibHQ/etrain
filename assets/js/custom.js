@@ -116,7 +116,7 @@
       });
 
       slider.addEventListener('afterChange', function (e) {
-        UI.toElements('.content').forEach(function (el) { el.style.display = 'none'; });
+        UI.toElements('.content[data-id]').forEach(function (el) { el.style.display = 'none'; });
         UI.toElements('.content[data-id="' + (e.detail.currentSlide + 1) + '"]').forEach(show);
       });
     });
@@ -189,7 +189,9 @@
         var ratingValue = rating ? rating.value : undefined;
 
         if (feedbackValue === '' || ratingValue === '') {
-          // As before, the form still submits (to "#") after the alert.
+          // Stay on the page so the visitor can fix it (the form used to
+          // submit to "#" anyway after the alert, reloading the page).
+          event.preventDefault();
           window.alert('You must select Star and Write a Review!');
         } else {
           var ajax = document.getElementById('reviewajax');
