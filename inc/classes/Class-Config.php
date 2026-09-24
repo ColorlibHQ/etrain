@@ -245,36 +245,8 @@
 						'in_footer' 	=> true
 					),
 					array(
-						'handler'		=> 'etrain-theme-instagram-feed-js',
-						'file' 			=> $jsPath.'jquery.instagramFeed.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
 						'handler'		=> 'etrain-theme-owl-carousel-js',
 						'file' 			=> $jsPath.'owl.carousel.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'etrain-theme-jquery.nice-select-js',
-						'file' 			=> $jsPath.'jquery.nice-select.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'etrain-theme-jquery-counterup-js',
-						'file' 			=> $jsPath.'jquery.counterup.min.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> '1.0',
-						'in_footer' 	=> true
-					),
-					array(
-						'handler'		=> 'etrain-theme-waypoints-min-js',
-						'file' 			=> $jsPath.'waypoints.min.js',
 						'dependency' 	=> array( 'jquery' ),
 						'version' 		=> '1.0',
 						'in_footer' 	=> true
@@ -288,10 +260,17 @@
 					),
 					
 					array(
+						'handler'		=> 'etrain-ui-js',
+						'file' 			=> $jsPath.'colorlib-ui.js',
+						'dependency' 	=> array(),
+						'version' 		=> '2.1.1',
+						'in_footer' 	=> true
+					),
+					array(
 						'handler'		=> 'etrain-theme-etrain-custom',
 						'file' 			=> $jsPath.'custom.js',
-						'dependency' 	=> array( 'jquery' ),
-						'version' 		=> $this->etrain_version,
+						'dependency' 	=> array( 'jquery', 'etrain-ui-js' ),
+						'version' 		=> $this->etrain_version . '-s1',
 						'in_footer' 	=> true
 					),
 
